@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <script>
+    function displayEls(){
+      let cname = document.getElementById("name");
+      console.log(document.getElementsByClassName("field-item")[0].value);
+      cname.innerHTML = document.getElementsByClassName("field-item")[0].value;
+    }
+  </script>
+</head>
+<body>
+  <section id="inputs">
+      <div class="field">
+        <label for="fname">Full Name: </label>
+        <input class="field-item" type="text" placeholder="Full Name" id="fname">
+      </div>
+
+      <div class="address">
+        <p>Address</p>
+        <div class="field">
+          <label for="city">City: </label>
+          <input class="field-item" type="text" placeholder="City" id="city">
+        </div>
+        <div class="field">
+          <label for="country">Country</label>
+          <select class="field-item" id="country">
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="website">Website: </label>
+        <input class="field-item" type="text" placeholder="Website" id="website">
+      </div>
+
+      <button id="btn" class="btn" type="button" onclick="displayEls()">Submit</button>
+  </section>
+  <section id="output">
+    <div id="name"></div>
+    <div id="address"></div>
+    <div id="website"></div>
+  </section>
+</body>
+</html>
