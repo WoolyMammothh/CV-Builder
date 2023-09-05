@@ -4,7 +4,7 @@ const displayEls = () => {
   displayName.innerHTML = name;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded",  () => {
   const btn = document.getElementById("btn");
   btn.addEventListener("click", displayEls);
 });
