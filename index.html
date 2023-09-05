@@ -6,13 +6,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <script src="index.js"></script>
-  <script>
-    function displayEls(){
-      let cname = document.getElementById("name");
-      console.log(document.getElementsByClassName("field-item")[0].value);
-      cname.innerHTML = document.getElementsByClassName("field-item")[0].value;
-    }
-  </script>
 </head>
 <body>
   <section id="inputs">
@@ -41,7 +34,7 @@
         <input class="field-item" type="text" placeholder="Website" id="website">
       </div>
 
-      <button id="btn" class="btn" type="button" onclick="displayEls()">Submit</button>
+      <button id="btn" class="btn" type="button">Submit</button>
   </section>
   <section id="output">
     <div id="name"></div>
